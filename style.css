@@ -1,0 +1,530 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.show {
+  top: 46px !important;
+  display: flex !important;
+}
+
+@media (max-width: 600px) {
+  .menu-area {
+    display: none !important;
+  }
+
+  .menu-colapse {
+    display: flex !important;
+    border: 1px solid #f5f5f5;
+    border-radius: 4px;
+
+    padding: 0 10px;
+  }
+
+  .menu-area-mobile {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: -200px;
+    width: 100vw;
+    background-color: #070f2b;
+    display: flex !important;
+    padding: 12px 0;
+    flex-direction: column !important;
+    text-align: center;
+    transition: top 300ms ease;
+  }
+
+  .menu-area-mobile a {
+    transition: 0.2s;
+    cursor: pointer;
+    color: #f5f5f5;
+    text-decoration: none;
+  }
+
+  .menu-area-mobile a:hover {
+    color: #9290c3;
+  }
+
+  .mobile-menu {
+    cursor: pointer;
+  }
+
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    margin: 8px;
+    background: #fff;
+  }
+
+  .app-container,
+  .page-header {
+    padding: 0 2rem !important;
+  }
+
+  .home-sobre-mim {
+    flex-direction: column;
+    align-items: flex-start !important;
+    margin: 3rem 0 5rem;
+  }
+
+  .img-eu img {
+    display: none;
+  }
+
+  .sobre-mim .name {
+    font-size: 22px;
+  }
+
+  .minha-tec p {
+    text-align: center;
+  }
+
+  .photo-tec {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cards-proj,
+  .page-cursos {
+    grid-template-columns: 1fr !important;
+  }
+
+  .page-contato-content {
+    grid-template-columns: 1fr !important;
+  }
+
+  .page-contato-content .page-msg p {
+    width: fit-content;
+  }
+
+  .page-contato-content .page-email {
+    margin-bottom: 20px;
+  }
+
+  .form-page {
+    width: 100% !important;
+  }
+
+  .page-footer {
+    flex-direction: column !important;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #070f2b;
+  font-family: "Poppins";
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4rem;
+}
+
+.abrir-menu {
+  display: none;
+}
+
+.menu-area {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.menu-area-mobile {
+  display: none;
+}
+
+.menu-area a {
+  transition: 0.2s;
+  cursor: pointer;
+  color: #f5f5f5;
+  text-decoration: none;
+}
+
+.menu-area a:hover {
+  color: #9290c3;
+  opacity: 0.7;
+}
+
+.menu-colapse {
+  display: none;
+}
+
+.menu-area,
+.menu-colapse {
+  z-index: 1;
+}
+
+.app-container {
+  padding: 0 4rem;
+  align-items: flex-start;
+}
+
+.active {
+  color: #9290c3 !important;
+}
+
+.home-subtitle {
+  color: #c6c6c6;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.home-title {
+  color: #c6c6c6;
+  font-weight: bold;
+  font-size: 40px;
+  margin: 0;
+}
+
+.home-role {
+  color: #c6c6c6;
+  font-size: 12px;
+  margin-top: 0;
+}
+
+.meu-buttom {
+  color: #535c91;
+  background-color: #070f2b;
+  display: flex;
+  border-radius: 8px;
+  font-size: 12px;
+  width: fit-content;
+  border: 1px solid #535c91;
+  padding: 12px 16px;
+  transition: 0.2;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.meu-buttom:hover {
+  background-color: #1b1a55;
+  color: #f5f5f5;
+  border-color: #1b1a55;
+  transform: scale(1.1);
+}
+
+.sobre-title {
+  color: #c6c6c6;
+  font-size: 24px;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 40px;
+  color: #f5f5f5;
+}
+
+.sobre-dev {
+  color: #c6c6c6;
+  font-size: 16px;
+}
+
+.home-sobre-mim {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.minha-tec {
+  display: flex;
+  margin-top: 60px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.minha-tec h3 {
+  color: #c6c6c6;
+  font-size: 24px;
+  margin: 0 auto;
+}
+
+.minha-tec p {
+  color: #c6c6c6;
+  font-size: 16px;
+}
+
+.photo-tec {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.my-proj {
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+  flex-direction: column;
+}
+
+h4 {
+  color: #f5f5f5;
+}
+
+.cards-proj {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 40px;
+  row-gap: 40px;
+}
+
+.card-proj1 {
+  border: 2px solid #1b1a55;
+  padding: 24px 16px;
+  transition: 0.2s;
+  cursor: pointer;
+  position: relative;
+}
+
+.card-proj1 img {
+  width: 100%;
+}
+
+.Buttom-Card-Proj {
+  color: #535c91;
+  background-color: #070f2b;
+  border-radius: 8px;
+  font-size: 12px;
+  border: 1px solid #535c91;
+  padding: 12px 16px;
+  transition: 0.2;
+  cursor: pointer;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.card-proj1:hover {
+  background-color: #1b1a55;
+  color: #f5f5f5;
+  border-color: #1b1a55;
+  transform: scale(1.1);
+}
+
+.card-proj2 {
+  border: 2px solid #1b1a55;
+  padding: 24px 16px;
+  transition: 0.2s;
+  cursor: pointer;
+  position: relative;
+}
+
+.card-proj2:hover {
+  background-color: #1b1a55;
+  color: #f5f5f5;
+  border-color: #1b1a55;
+  transform: scale(1.1);
+}
+
+.card-proj3 {
+  border: 2px solid #1b1a55;
+  padding: 24px 16px;
+  transition: 0.2s;
+  cursor: pointer;
+  position: relative;
+}
+
+.card-proj3:hover {
+  background-color: #1b1a55;
+  color: #f5f5f5;
+  border-color: #1b1a55;
+  transform: scale(1.1);
+}
+
+.my-proj h3 {
+  padding: 20px;
+}
+
+h4 {
+  margin-top: 0;
+}
+
+.project-image {
+  width: 100%;
+}
+
+.my-proj h3 {
+  color: #c6c6c6;
+  font-size: 24px;
+  margin: 0 auto;
+}
+
+.my-proj p {
+  color: #c6c6c6;
+  font-size: 16px;
+}
+
+.cursos {
+  align-items: center;
+  flex-direction: column;
+  color: #c6c6c6;
+  font-size: 24px;
+  padding: 90px 0;
+}
+
+.cursos h3 {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 24px;
+}
+
+.cursos-border {
+  height: 100%;
+  width: 8px;
+  background-color: #fff;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.page-cursos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.page-cursos-tg {
+  background-color: #1b1a55;
+  padding: 12px 16px;
+  border-radius: 8px;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.page-cursos-tg h4 {
+  color: #f5f5f5;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.page-cursos-tg p {
+  color: #d9d9d9;
+  font-size: 12px;
+}
+
+.cursos-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress-indicator {
+  height: 16px;
+  width: 16px;
+  background-color: #9290c3;
+  border-radius: 50%;
+}
+
+.curso-progress {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.page-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+  border-top: 1px solid #535c91;
+}
+
+.icon-footer {
+  display: flex;
+  gap: 10px;
+}
+
+.icon-footer a {
+  text-decoration: none;
+}
+
+.page-contato-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.page-contato h3 {
+  color: #c6c6c6;
+  display: flex;
+  font-size: 24px;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 30px;
+}
+
+.page-msg p {
+  color: #c6c6c6;
+  font-size: 14px;
+  max-width: 500px;
+}
+
+.page-email {
+  display: flex;
+  gap: 10px;
+}
+
+.page-email p {
+  color: #c6c6c6;
+  font-size: 14px;
+}
+
+.form-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-page label {
+  color: #f5f5f5;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.form-page input {
+  border-radius: 10px;
+  background-color: #070f2b;
+  border: 1px solid #d9d9d9;
+  color: #f5f5f5;
+  margin-bottom: 8px;
+  padding: 10px;
+}
+
+.form-page textarea {
+  border-radius: 10px;
+  background-color: #070f2b;
+  border: 1px solid #d9d9d9;
+  color: #f5f5f5;
+  margin-bottom: 10px;
+}
+
+.meu-buttom-contato {
+  background-color: #1b1a55;
+  color: FFFFFF;
+  border-radius: 10px;
+  border: 1px solid #d9d9d9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.meu-buttom-contato:hover {
+  background-color: #070f2b;
+  color: #f5f5f5;
+  border-color: #070f2b;
+}
