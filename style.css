@@ -340,6 +340,21 @@ h4 {
   transform: scale(1.1);
 }
 
+.card-proj4 {
+  border: 2px solid #1b1a55;
+  padding: 24px 16px;
+  transition: 0.2s;
+  cursor: pointer;
+  position: relative;
+}
+
+.card-proj4:hover {
+  background-color: #1b1a55;
+  color: #f5f5f5;
+  border-color: #1b1a55;
+  transform: scale(1.1);
+}
+
 .my-proj h3 {
   padding: 20px;
 }
